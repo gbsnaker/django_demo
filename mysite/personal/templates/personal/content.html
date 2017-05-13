@@ -1,6 +1,12 @@
 {% extends "personal/header.html" %}
 
 {% block content%}
-	<p> this is first  </p>
+	<p> content </p>
+	<ul>
+		{% for name in names %}
+			<li>{{ name }}</li>
+    	{% endfor %}
+	</ul>
+
 {% include "personal/includes/htmlsnippet.html" %}	
 {% endblock %}
